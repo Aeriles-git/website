@@ -1,98 +1,80 @@
 :root {
-	--bg-color: #0d1117;
-	--text-color: #c9d1d9;
-    	--accent-color: #50fa7b;
-	--link-color: #8be9fd;
-	--border-color: #30363d;
-	--dim-text: #8b949e;
+	--bg-color: #1A171C;
+	--text-color: #FBF7CF;
+    	--accent-color: #C8197A;
+	--link-color: #717BC2;
+	--hr-color: #2B2132;
 }
 
+html, body {
+	height: 100%;
+}
+
+html {
+	display: table;
+	margin: auto;
+	font-size: 125%;
+}
+
+
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: monospace;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: monospace;
+
+	max-width: 600px;
+	display: table-cell;
+}
+
+.eye {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	max-width: 100%;
+	height: auto;
 }
 
 h1, h2 {
-    color: var(--accent-color);
-    font-weight: 800;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 0.3rem;
+	color: var(--accent-color);
+	font-weight: 800;
 }
 
 header {
 	text-align: center;
 }
 
-header p {
-    color: var(--dim-text);
-    font-style: italic;
-    margin-bottom: 3rem;
-}
-
-.article-header {
-    display: flex;
-    justify-content: space-between; /* Pushes items to opposite sides */
-    align-items: baseline;          /* Aligns text by the bottom of the letters */
-}
-
-.article-header h3 {
-    margin: 0;
-    padding: 0;
-    border: none; /* Removing the full-width border from previous version */
-}
-
-/* The light text on the right */
-.meta {
-    color: var(--dim-text);
-    font-family: monospace;
-    opacity: 0.8;
-}
-
-/* Spacing between articles */
-article {
-	background-color: var(--border-color);
-	padding: 1rem;
-	border-radius: 25px;
-	margin-bottom: 4rem;
-}
-
-/* --- Links --- */
 a {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: 0.2s;
+	color: var(--link-color);
+	text-decoration: none;
+	transition: 0.2s;
 }
 
 a:hover {
-    text-decoration: underline;
-    filter: brightness(1.2);
+	text-decoration: underline;
+	filter: brightness(1.2);
 }
 
 footer {
-    margin-top: 5rem;
-    text-align: center;
+	margin-top: 2rem;
+	text-align: center;
+	color: #5A3E71;
 }
 
 footer hr {
-    border: 0;
-    border-top: 1px solid var(--border-color);
-    margin-bottom: 1.5rem;
+	border: 0;
+	border-top: 2px solid #5A3E71;
+	margin-bottom: 1.5rem;
 }
 
 footer small {
-    display: block;
-    color: var(--dim-text);
-    word-spacing: 5px; /* Keeps the links readable */
+	display: block;
+	word-spacing: 5px;
 }
 
 footer a {
-    margin: 0 5px;
-    text-transform: uppercase;
-    font-weight: bold;
+	margin: 0 5px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
